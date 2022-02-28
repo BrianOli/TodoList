@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style/style.css"/>
+
+
+</head>
+<body>
+    
+    <header class="bgSecondaryColor">
+        <h1 class="secondaryColor lgFont bold">To Do List</h1>
+    </header>
+
+    <main>
+
+        <div class="title">
+            <h2 class="bold primaryColor mdFont">
+                Afazeres
+            </h2>
+            <span class="thirdColor mdFont">Lista de afazeres</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <h2>Insira um item na lista:</h2>
+                <input type="text" id="inputItem" placeholder="Insira um todo" class="smFont thirdColor">
+
+                <button onclick="todo.addTodo()" id="btnSave" class="smFont bold bgSecondaryColor secondaryColor">Salvar</button>
+                <button onclick="todo.cancel()" id="btnCancel" class="smFont bold bgSecondaryColor secondaryColor">Cancelar</button>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <table>
+                <thead class="bgSecondaryColor mdFont bold">
+                    <th> ID </th>
+                    <th>Nome do afazer</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
