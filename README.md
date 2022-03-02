@@ -17,3 +17,10 @@ Todo List feita utilizando Javascript puro. \
  - `Javascript`
 
 # Desenvolvido por Brian Oliveira - 2022
+
+
+## Atualizações
+
+- **02/03** \
+Primeira tentativa de implementar cookies/sessionStorage para salvar os arquivos do usuário de maneira local.
+
