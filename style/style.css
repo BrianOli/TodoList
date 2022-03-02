@@ -94,15 +94,9 @@ main{
 }
 .lineInput button:hover{
     cursor: pointer;
-    width: 8.5em;
-    height: 2.5em;
+    transform: translate(1px, -1px);
     background-color: var(--bgSecondaryDarker);
-}
-#btnSave:hover{
-    box-shadow: -.3em .3em #000;
-}
-#btnCancel:hover{
-    box-shadow: .3em .3em #000;
+    box-shadow: -.2em .2em #000;
 }
 
 table{
@@ -138,4 +132,29 @@ tbody tr:nth-child(even){
 tbody td span, tbody td span:hover{
     font-size: 1.5em !important;
     cursor: pointer;
+}
+
+
+
+.viewChange{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+}
+.viewChange a{
+    text-decoration: none;
+    height: 2em;
+    width: 5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .2em;
+    border: 1px solid black;
+    transition: all ease .2s;
+}
+.viewChange a:hover{
+    background-color: var(--bgSecondaryDarker);
+    transform: translate(2px, -2px);
+    box-shadow: -.2em .2em #000;
+    text-shadow: -2px 2px #000;
 }

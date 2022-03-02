@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="./style/style.css"/>
-
-
+    <title>Dones</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     
@@ -25,21 +19,10 @@
             <h2 class="bold primaryColor mdFont">
                 Afazeres
             </h2>
-            <span class="thirdColor mdFont">Lista de afazeres</span>
+            <span class="thirdColor mdFont">Lista de afazeres Concluidos</span>
         </div>
 
-        <div class="card">
-            <div class="lineInput">
-                <h2>Insira um item na lista:</h2>
-                <input type="text" id="inputItem" placeholder="Insira um todo" class="smFont thirdColor">
-
-                <button onclick="todo.addTodo()" id="btnSave" class="smFont bold bgSecondaryColor secondaryColor">Salvar</button>
-                <button onclick="todo.cancel()" id="btnCancel" class="smFont bold bgSecondaryColor secondaryColor">Cancelar</button>
-
-            </div>
-        </div>
-
-        <div class="content">
+        <div class="content" >
             <table>
                 <thead class="bgSecondaryColor mdFont bold">
                     <th> ID </th>
@@ -53,8 +36,8 @@
         </div>
 
         <div class="viewChange">
-                <a href="./done.html" class="bgSecondaryColor mdFont bold secondaryColor">
-                    Concluidos
+                <a href="./index.html" class="bgSecondaryColor mdFont bold secondaryColor">
+                    Voltar
                 </a>
 
                 <a href="./removed.html" class="bgSecondaryColor mdFont bold secondaryColor">
@@ -65,6 +48,5 @@
 
     </main>
 
-    <script src="./script/script.js"></script>
 </body>
 </html>

@@ -3,13 +3,17 @@ const todoName = document.getElementById('inputItem');
 class Todo{
 
     constructor() {
-        this.id = 1;
-        this.done = false;
-        this.todoDone = []
+        this.id = 0;
         this.todoArray = [];
+
+        this.todoDone = [];
+        this.done = false;
+
+        this.session = [];
     }
 
     readInput() {
+
         let todo = {};
 
         todo.done = this.done;
@@ -17,6 +21,7 @@ class Todo{
         todo.todoName = todoName.value;
 
         return todo;
+
     }
 
     addTodo() {
@@ -25,6 +30,8 @@ class Todo{
         if (todo.todoName !== '') {
             this.addArray(todo);
             this.addList()
+            
+
             return this.cancel();
         }
 
@@ -35,6 +42,7 @@ class Todo{
     addArray(todo) {
         this.todoArray.push(todo);
         this.id++;
+        this.saveSession(this.todoArray)
     }
 
     addList() {
@@ -99,6 +107,11 @@ class Todo{
         }
     }
 
+    saveSession(todo) {
+        console.log(todo[0])
+    }
+
 }
 
 let todo = new Todo();
+
